@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 150px;
+    height: 10%;
     background-color: forestgreen;
 }
 
@@ -8,7 +8,21 @@ p{
     color: white;
     font-weight: bold;
     font-size: 1em;
-    display: flex;
-    padding: 10px;
+    display: inline-flex;
+    padding: 40px;
     text-align: center;
+    align-items: center;
+    height: 10%;
+    transition: color 0.8s, background-color 0.8s;
+}
+
+p:hover{
+    color: forestgreen;
+    background-color: white;
+}
+
+.logo{
+    display: block;
+    padding: 40px;
+    
 }
