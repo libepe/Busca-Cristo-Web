@@ -1,2 +1,0 @@
-# Busca-Cristo-Web
-BuscaCristo
