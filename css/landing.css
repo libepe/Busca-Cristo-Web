@@ -18,12 +18,12 @@ h2{
     text-align: center;
     align-items: center;
     height: 10%;
-    transition: color 0.8s, font-size 0.8s,background-color 0.8s;
+    transition: color 0.8s, scale 0.8s,background-color 0.8s;
 }
 
 h2:hover{
     color: lightseagreen;
-    font-size: 1.6em;
+    scale: 1.2;
 }
 
 #logo{
