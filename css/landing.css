@@ -15,9 +15,11 @@ header{
 nav{
     margin-left: 12%;
     margin-top: -10%;
+    display: flex;
+    align-items: center;
 }
 
-h2{
+.apartado{
     color: teal;
     font-weight: bold;
     font-size: 1.5em;
@@ -29,7 +31,7 @@ h2{
     transition: color 0.8s, scale 0.8s,background-color 0.8s;
 }
 
-h2:hover{
+.apartado:hover{
     color: lightseagreen;
     scale: 1.2;
 }
@@ -45,7 +47,7 @@ h2:hover{
     margin: 0;
 }
 
-#logo:hover{
+#logo:hover, #language:hover{
     background-color: lightseagreen;
 }
 
@@ -59,14 +61,41 @@ h2:hover{
 }
 
 #search{
-    height: 40px;
-    border: 5px solid teal;
-    border-radius: 15px;
-    font-size: 1em;
+    font-size: 1.5em;
     color: teal;
+    transition: color 0.8s;
+    padding: 60px;
+}
+
+#searchfield{
+    border: 3px solid teal;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    color: teal;
+    
+}
+
+#search:hover{
+    color: lightseagreen;
 }
 
 #language{
     height: 40px;
-    color: teal;
+    background-color: teal;
+    color: white;
+    margin-left: 50px;
+    appearance: none;
+    width: 5%;
+    text-align: center;
+    scale: 1.4;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.8s;
 }
+
+#language option{
+    font-size: 1.5em;
+}
+
+
