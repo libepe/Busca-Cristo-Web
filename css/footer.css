@@ -1,6 +1,6 @@
 footer{
-    border-top: 5px solid dodgerblue;
-    background-color: black;
+    border-top: 5px solid rgb(111, 150, 170);
+    background-color: rgba(45, 81, 92,1);
 }
 
 
@@ -10,63 +10,26 @@ footer{
     justify-content: center;
     display: flex;
     align-items: center;
+    list-style-type: none;
 }
 
 #rrss{
     margin: 0 50px;
     text-decoration: none;
     transform: scale(1.7);
+    color: rgb(111, 150, 170);
+    transition: transform 0.5s;
 }
 
-.facebook{
-    color: dodgerblue;
-}
-.whatsapp{
-    color: limegreen;
-}
-.spotify{
-    color: lime;
-}
-.instagram{
-    color: magenta;
-}
-.youtube{
-    color: red;
+#rrss:hover{
+    transform: scale(2);
 }
 
-#footlogo {
-    display: block;
-    height: 115px;
-    width: 180px;
-    transition: transform 0.7s;
-    position: relative;
-    margin-left: 150px;
-    margin-bottom: -125px;
+
+#menu-rrss img {
+    transform: scale(0.1);
     position: absolute;
-    top: 105%;
-    cursor: pointer;
-    align-items: center;
-    transform: scale(0.8);
+    left: 10%;
 }
 
-#footbuscacristo {
-    display: block;
-    position: absolute;
-    transform: scale(0.16);
-    top: 0;
-    left: 0;
-    padding: 0;
-    transform-origin: top left;
-}
 
-#foottitulo{
-    display: block;
-    font-weight: bold;
-    font-style: oblique;
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    width: 65%;
-    padding: 0;
-    color: white;
-}
