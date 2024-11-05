@@ -1,0 +1,190 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#logo {
+    display: block;
+    height: 115px;
+    width: 180px;
+    transition: transform 0.7s;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 2%;
+    cursor: pointer;
+    align-items: center;
+    transform: scale(1.2);
+    position: fixed;
+}
+
+
+#buscacristo {
+    display: block;
+    position: absolute;
+    transform: scale(0.16);
+    top: 0;
+    left: 0;
+    padding: 0;
+    transform-origin: top left;
+    filter: drop-shadow(20px 20px 0px dodgerblue);
+}
+
+#titulo{
+    display: block;
+    font-weight: bold;
+    font-style: oblique;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 65%;
+    padding: 0;
+    color: white;
+    background-clip: text;
+    text-shadow: 2px 2px 0px dodgerblue;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: fixed;
+    top: 8%;
+    right: 80px; 
+    left: 15%;
+}
+
+#fixedheader{
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    transition: background-color 0.5s;
+}
+   
+.scrolled{
+    background-color: black;
+}
+
+.menu {
+    list-style-type: none; 
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    height: 10%;
+    display: flex;
+}
+
+.apartado {
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.7s;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    margin: 0 60px;
+    height: 50px;
+    white-space: nowrap;
+}
+
+.apartado a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.apartado::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: dodgerblue;
+    transition: width 0.7s;
+}
+
+.apartado:hover{
+    transform: scale(1.2);
+}
+
+.apartado:hover::after{
+    width: 100%;
+}
+
+.language-search {
+    display: flex; 
+    align-items: center;
+    margin-left: 20px; 
+}
+
+#search {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.8s;
+    margin-left: 50px;
+    margin-top: -20px;
+    white-space: nowrap;
+}
+
+
+#searchfield {
+    border: 3px solid dodgerblue;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    padding-left: 10px; 
+}
+
+::placeholder {
+    color: white;
+}
+
+#language {
+    height: 50px;
+    margin-left: 20px; 
+    appearance: none;
+    border: none; 
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 15px; 
+    font-size: 20px; 
+    background-color: transparent; 
+    font-weight: bold;
+    margin-top: -20px;
+    transform: scale(2);
+    text-align: center;
+    width: 80px;
+}
+
+#options{
+    display: none;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+#language.languages #options {
+    display: block;
+}
+
+.option:hover{
+    background-color: lightblue;
+}
+
+
