@@ -2,13 +2,12 @@
 
 
 #fondo{
-    border-bottom: 10px solid rgb(111, 150, 170);
-    padding: 0;
-    margin-top: -90%;
-    position: absolute;
-    z-index: -1;
     width: 100%;
-    overflow: hidden;
+    position: relative;
+    border-bottom: 10px solid rgb(111, 150, 170);
+    margin-top: -80%;
+    justify-content: center;
+    z-index: 0;
 }
 
 .imagenfondo{
@@ -45,7 +44,6 @@ hr{
     justify-content: center;
     margin-left: 5%;
     border-radius: 30px;
-    margin-top: 28%;
     z-index: 1;
     flex-direction: column;
     gap: 70px;
@@ -73,7 +71,7 @@ hr{
 }
 
 #frasebienvenida-contenedor{
-    margin-top: 100px;
+    top: 30%;
     left: 45%;
     position: absolute;
     z-index: 1;
@@ -99,7 +97,7 @@ hr{
     border-radius: 50%;
     height: 500px;
     width: 500px;
-    border: 5px solid rgb(45,81,92);
+    border: 5px solid white;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -125,7 +123,7 @@ hr{
     height: 50vh;
     border: none;
     cursor: pointer;
-    background-color: antiquewhite;
+    border: 2.5px solid white;
     overflow: hidden;
     position: relative;
     margin: 0;
