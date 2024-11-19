@@ -3,26 +3,30 @@ fetch('header.html')
     .then(data=>{
         document.getElementById('header').innerHTML=data;
 
-        const selected = document.getElementById('selected');
-        const language = document.getElementById('language');
-        const gotop = document.getElementById('go-top');
+            const language=document.getElementById('language');
+            const selected=document.getElementById('selected');
+            selected.addEventListener('click', () => {
+                language.classList.toggle('languages');
+            });
+        
+    
 
-        language.addEventListener('click', () => {
-            language.classList.toggle('languages');
-        });
+     
+    
     });
 
-        function scrollToTop(){
-            document.documentElement.scrollTop=0;
-        };
+    function scrollToTop(){
+        document.documentElement.scrollTop=0;
+    };
 
+  
     
 
 
 
 window.addEventListener('scroll', () => {
-    const fixedheader = document.getElementById('fixedheader');
-    const gotop = document.getElementById('go-top');
+    const fixedheader=document.getElementById('fixedheader');
+    const gotop=document.getElementById('go-top');
 
     if(window.scrollY>10) {
         fixedheader.classList.add('scrolled');

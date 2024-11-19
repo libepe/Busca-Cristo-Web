@@ -1,6 +1,16 @@
 footer{
     border-top: 5px solid rgb(111, 150, 170);
     background-color: rgba(45, 81, 92,1);
+    position: relative;
+}
+
+footer img{
+   transform: scale(0.14);
+   position: absolute;
+   left: -3%;
+   top: 40%;
+   margin-top: -20%;
+   
 }
 
 
@@ -16,13 +26,13 @@ footer{
 #rrss{
     margin: 0 50px;
     text-decoration: none;
-    transform: scale(1.7);
+    font-size: 30px;
     color: rgb(111, 150, 170);
     transition: transform 0.5s;
 }
 
 #rrss:hover{
-    transform: scale(2);
+    transform: scale(1.2);
 }
 
 
@@ -32,4 +42,32 @@ footer{
     left: 10%;
 }
 
+hr{
+    background-color: rgb(111, 150, 170);
+    width: 80%;
+    height: 2px;
+    border: none;
+    margin: 0 auto;
+}
 
+#menu-contacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+
+.footer-seccion{
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+#links{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}

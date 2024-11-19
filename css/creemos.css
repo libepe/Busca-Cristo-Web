@@ -61,6 +61,7 @@
 
 .creencias-seccion{
     display: flex;
+    cursor: pointer;
     box-shadow: 5px 5px 5px rgb(45,81,92);
     flex-wrap: wrap;
     border-radius: 20px;
@@ -83,7 +84,7 @@
 }
 
 .creencias-seccion.open span{
-    top: 0;
+    top: -15%;
 }
 .creencias-seccion.open p,.creencias-seccion:hover.open .info{
     display: block;
@@ -111,6 +112,7 @@
     color: white;
     font-weight: bolder;
     font-size: 40px;
+    transition: top 0.6s ease-in-out;
 }
 
 .creencias-seccion p{
@@ -132,6 +134,7 @@
 #info-contenedor{
     display: flex;
     flex-direction: column;
+    margin-top: -60%;
 }
 
 
