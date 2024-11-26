@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
-
-
 
 #fondo {
     width: 100%;
@@ -41,32 +38,32 @@
 }
 
 #creemos{
-    transform: scale(1.2);
-    text-shadow: 1px 1px 30px white;
+    color: gold;
 }
 
 #creencias{
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.columna{
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
     gap: 20px;
     width: 100%;
 }
 
+.creencias-seccion:hover span{
+    color: gold;
+}
+
 .creencias-seccion{
+    opacity: 1;
+    visibility: visible;
     display: flex;
+    flex-direction: column;
+    position: relative;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgb(45,81,92);
-    flex-wrap: wrap;
-    border-radius: 20px;
-    height: 700px;
-    margin: 0;
+    box-shadow: 0 5px 10px rgb(45,81,92);
+    height: 500px;
+    margin: 5px 0;
     width: 100%;
     overflow: hidden;
     justify-content: center;
@@ -75,20 +72,9 @@
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
-    transition: background-color 0.6s, height 1s;
+    transition: opacity 0.7s ease, visibility 0s 0.7s;
 }
 
-.creencias-seccion.open{
-    background-color: rgba(45, 81, 92, 0.9);
-    height: 1000px;
-}
-
-.creencias-seccion.open span{
-    top: -15%;
-}
-.creencias-seccion.open p,.creencias-seccion:hover.open .info{
-    display: block;
-}
 
 #jesucristo{
     background-image: url('../images/creencia-jesucristo.jpg');
@@ -105,6 +91,26 @@
 #historiafamiliar{
     background-image: url('../images/historiafamiliar.jpeg');
 }
+#bautismo{
+    background-image: url('../images/creencia-bautismo.jpeg');
+}
+
+#portada-creemos{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0s 0.7s;
+}
+
+.creencias-seccion.open{
+    height: 800px;
+    opacity: 1;
+}
+.creencias-seccion.close{
+    opacity: 0;
+}
+#portada-creemos.close{
+    opacity: 0;
+}
 
 .creencias-seccion span{
     position: relative;
@@ -112,30 +118,11 @@
     color: white;
     font-weight: bolder;
     font-size: 40px;
-    transition: top 0.6s ease-in-out;
+    transition: top 0.6s ease-in-out,color 0.7s;
 }
 
-.creencias-seccion p{
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    width: 400px;
-    display: none;
-}
-.creencias-seccion .info{
-    position: relative;
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    display: none;
-    margin: 20px 0;
-}
-#info-contenedor{
-    display: flex;
-    flex-direction: column;
-    margin-top: -60%;
-}
+
+
 
 
 

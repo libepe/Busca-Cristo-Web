@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 #fondo {
     width: 100%;
     position: relative;
@@ -41,8 +39,7 @@
 }
 
 #aprendemas{
-    transform: scale(1.2);
-    text-shadow: 1px 1px 30px white;
+    color: gold;
 }
 
 

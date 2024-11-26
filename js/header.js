@@ -5,6 +5,7 @@ fetch('header.html')
 
             const language=document.getElementById('language');
             const selected=document.getElementById('selected');
+
             selected.addEventListener('click', () => {
                 language.classList.toggle('languages');
             });
@@ -16,14 +17,12 @@ fetch('header.html')
     });
 
     function scrollToTop(){
-        document.documentElement.scrollTop=0;
-    };
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+    })};
 
   
-    
-
-
-
 window.addEventListener('scroll', () => {
     const fixedheader=document.getElementById('fixedheader');
     const gotop=document.getElementById('go-top');
