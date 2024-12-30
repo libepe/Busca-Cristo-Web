@@ -10,39 +10,27 @@
     <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-    <header>
         <div id="fixedheader">
-            <a href="index.html">
-                <div id="logo">
-                    <img id="buscacristo" src="images/logobuscacristo.png" alt="buscacristo">
-                    <h1 id="titulo">Busca A Cristo</h1>
+                <img  id="logo" class="p p-logo" src="images/logobuscacristo.png" alt="logo">
+                <p id="creemos" class="p p-apartado"><a href="restauracion.html">Restauración</a></p>
+                <p id="aprendemas" class="p p-apartado"><a href="aprendemas.html">Jeucristo y Su Evangelio</a></p>
+                <p class="p p-apartado"><a href="#">Senda de los Convenios</a></p>
+                <p class="p p-apartado"><a href="#">Actividades</a></p>
+                <div id="language" class="p">
+                    <div id="selected"><span class="fi fi-es"></span></div>
+                    <ul id="options">
+                        <li class="option"><span class="fi fi-es"></span></li>
+                        <li class="option"><span class="fi fi-es-ct"></span></li>
+                        <li class="option"><span class="fi fi-gb"></span></li>
+                    </ul>
                 </div>
-            </a>
-            <nav>
-                <ul class="menu">
-                    <li id="creemos" class="apartado"><a href="creemos.html">¿En qué creemos?</a></li>
-                    <li id="aprendemas" class="apartado"><a href="aprendemas.html">¡Conéctate con Cristo!</a></li>
-                    <li class="apartado"><a href="#">Testimonios</a></li>
-                    <li class="apartado"><a href="#">Reúnete</a></li>
-                </ul>
-                <div class="language-search">
-                    <div id="language">
-                        <div id="selected"><span class="fi fi-es"></span></div>
-                        <ul id="options">
-                            <li class="option"><span class="fi fi-es"></span></li>
-                            <li class="option"><span class="fi fi-es-ct"></span></li>
-                            <li class="option"><span class="fi fi-gb"></span></li>
-                        </ul>
-                    </div>
-                    <div id="search">
-                        <input id="searchfield" type="text" placeholder="Search here...">
-                        <i class="fas fa-search"></i>
-                    </div>
+                <div id="search" class="p">
+                    <input id="searchfield" type="text" placeholder="Search here...">
+                    <i class="fas fa-search"></i>
                 </div>
-            </nav>
+                </div>
             <button id="go-top" onclick="scrollToTop()"><i id="go-top-arrow" class="fas fa-arrow-up"></i></button>
         </div>
-    </header>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="js/header.js"></script>
 </body>

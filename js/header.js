@@ -22,6 +22,14 @@ fetch('header.html')
             behavior: "smooth"
     })};
 
+    function pageChange(){
+        const logo=document.getElementById('logo');
+        logo.addEventListener('click',()=>{
+            window.location.href="home.html";
+        });
+    }
+    window.onload=pageChange;
+
   
 window.addEventListener('scroll', () => {
     const fixedheader=document.getElementById('fixedheader');
