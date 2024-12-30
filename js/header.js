@@ -9,11 +9,6 @@ fetch('header.html')
             selected.addEventListener('click', () => {
                 language.classList.toggle('languages');
             });
-        
-    
-
-     
-    
     });
 
     function scrollToTop(){
@@ -22,15 +17,6 @@ fetch('header.html')
             behavior: "smooth"
     })};
 
-    function pageChange(){
-        const logo=document.getElementById('logo');
-        logo.addEventListener('click',()=>{
-            window.location.href="home.html";
-        });
-    }
-    window.onload=pageChange;
-
-  
 window.addEventListener('scroll', () => {
     const fixedheader=document.getElementById('fixedheader');
     const gotop=document.getElementById('go-top');

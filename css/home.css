@@ -10,17 +10,17 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 0;
 }
 
-.enlace{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-decoration: none;
-    z-index: 3;
+#titulo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 hr{

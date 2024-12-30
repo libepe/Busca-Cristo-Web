@@ -1,30 +1,26 @@
-function openDiv() {
-    const secciones = document.querySelectorAll('.creencias-seccion, #portada-creemos');
-
-    secciones.forEach((seccion) => {
-        seccion.addEventListener('click', () => {
-            secciones.forEach((otraseccion) => {
-                if (otraseccion==seccion) {
-                    if (seccion.classList.contains('open')) {
-                        seccion.classList.remove('open');
-                    } else {
-                        seccion.classList.add('open');
-                    }
-                } else {
-                    otraseccion.classList.remove('close');
-                    otraseccion.style.display = 'block';
-                }
-            });
-            secciones.forEach((otraseccion) => {
-                if (!otraseccion.classList.contains('open') && otraseccion!==seccion) {
-                    otraseccion.classList.add('close');
-                    setTimeout(() => {
-                        otraseccion.style.display = 'none';
-                    }, 500); 
-                }
-            });
-        });
+function scrollToMormon(){
+    const libromormon=document.getElementById('seccion-libromormon');
+    libromormon.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest',
     });
-}
+};
 
-openDiv();
+function scrollToJoseSmith(){
+    const josesmith=document.getElementById('seccion-josesmith');
+    josesmith.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest',
+    });
+};
+
+function scrollToApostasia(){
+    const apostasia=document.getElementById('seccion-apostasia');
+    apostasia.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'nearest',
+    });
+};

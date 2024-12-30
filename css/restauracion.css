@@ -1,7 +1,4 @@
-
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 #fondo {
     width: 100%;
@@ -10,110 +7,72 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/fondocreemos.webp');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 0;
 }
 
-#tituloapartado-contenedor{
-    position: absolute;
-    top: 30%;
-    left: 47%;
-    z-index: 1;
-    text-align: center;
-}
-
-#tituloapartado{
+#titulo{
     color: white;
-    transform: scale(5);
-    font-weight: bolder;
-    padding: 50px;
-    text-shadow: 2px 2px 6px rgb(45,81,92);
-    font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 #creemos{
     color: gold;
 }
 
-#creencias{
-    overflow: hidden;
+/*MAIN*/
+
+#submenu{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    gap: 20px;
 }
 
-.creencias-seccion:hover span{
-    color: gold;
+.subapartado{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(45, 81, 92);
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    cursor: pointer;
+    justify-content: center;
 }
 
-.creencias-seccion{
-    opacity: 1;
-    visibility: visible;
+#secciones{
     display: flex;
     flex-direction: column;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgb(45,81,92);
-    height: 500px;
-    margin: 5px 0;
     width: 100%;
-    overflow: hidden;
+    border: 5px solid red;
+}
+
+.seccion{
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    transition: opacity 0.7s ease, visibility 0s 0.7s;
+    border: 3px solid green;
+}
+
+.seccion-titulo{
+    color: rgba(45, 81, 92);
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Roboto';
 }
 
 
-#jesucristo{
-    background-image: url('../images/creencia-jesucristo.jpg');
-}
-#escrituras{
-    background-image: url('../images/creencia-libromormon.webp');
-}
-#oracion{
-    background-image: url('../images/creencia-oracion.jpeg');
-}
-#familia{
-    background-image: url('../images/creencia-familia.jpeg');
-}
-#historiafamiliar{
-    background-image: url('../images/historiafamiliar.jpeg');
-}
-#bautismo{
-    background-image: url('../images/creencia-bautismo.jpeg');
-}
-
-#portada-creemos{
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.7s ease, visibility 0s 0.7s;
-}
-
-.creencias-seccion.open{
-    height: 800px;
-    opacity: 1;
-}
-.creencias-seccion.close{
-    opacity: 0;
-}
-#portada-creemos.close{
-    opacity: 0;
-}
-
-.creencias-seccion span{
-    position: relative;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 40px;
-    transition: top 0.6s ease-in-out,color 0.7s;
-}
 
 
 

@@ -13,33 +13,24 @@
 <body>
     <container>
             <div id="header"></div>
-            <div id="portada-creemos">
-                <div id="fondo">
-                </div>
-                <div id="tituloapartado-contenedor">
-                    <p id="tituloapartado">FE</p>
-                </div>
+            <div id="fondo">
+                <h1 id="titulo">La restauración</h1>
             </div>
             <main>
-                <div id="creencias">
-                        <div class="creencias-seccion" id="jesucristo">
-                            <span>DIOS EL PADRE Y JESUCRISTO</span>
-                        </div>
-                        <div class="creencias-seccion" id="oracion">
-                            <span>LA ORACIÓN</span>
-                        </div>
-                        <div class="creencias-seccion" id="familia">
-                            <span>LA FAMILIA</span>
-                        </div>
-                        <div class="creencias-seccion" id="escrituras">
-                            <span>EL LIBRO DE MORMÓN</span>
-                        </div>
-                        <div class="creencias-seccion" id="bautismo">
-                            <span>EL BAUTISMO</span>
-                        </div>
-                        <div class="creencias-seccion" id="historiafamiliar">
-                            <span>LA HISTORIA FAMILIAR</span>
-                        </div>
+                <div id="submenu">
+                    <div class="subapartado" id="libromormon" onclick="scrollToMormon()">El Libro de Mormón</div>
+                    <div class="subapartado" id="josesmith" onclick="scrollToJoseSmith()">José Smith</div>
+                    <div class="subapartado" id="apostasia" onclick="scrollToApostasia()">La Apostasía</div>
+                </div>
+                <div id="secciones">
+                    <div class="seccion" id="seccion-libromormon">
+                        <p class="seccion-titulo">El Libro de Mormón</p>
+                    </div>
+                    <div class="seccion" id="seccion-josesmith">
+                        <p class="seccion-titulo">José Smith</p>
+                    </div>
+                    <div class="seccion" id="seccion-apostasia">
+                        <p class="seccion-titulo">La Apostasía</p>
                     </div>
                 </div>
             </main>
