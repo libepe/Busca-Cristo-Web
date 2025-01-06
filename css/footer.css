@@ -5,13 +5,7 @@ footer{
     position: relative;
 }
 
-footer img{
-   transform: scale(0.15);
-   position: absolute;
-   left: -3%;
-   top: 55%;
-   margin-top: -20%;
-}
+
 
 
 #menu-rrss{
