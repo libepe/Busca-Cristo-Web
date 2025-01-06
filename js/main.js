@@ -24,3 +24,10 @@ function scrollToApostasia(){
         inline: 'nearest',
     });
 };
+
+function goPage(){
+    const restauracion=document.querySelector('.pagina-restauracion');
+    restauracion.addEventListener('click', () => {
+        window.location.href="restauracion.html";
+    })
+}

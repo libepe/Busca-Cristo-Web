@@ -4,7 +4,7 @@
     width: 100%;
     position: relative;
     border-bottom: 10px solid rgb(111, 150, 170);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/fondocreemos.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/restauracion.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -24,6 +24,7 @@
     text-transform: uppercase;
     font-size: 50px;
     font-weight: bold;
+    font-family: 'Georgia',serif;
 }
 
 /*MAIN*/
