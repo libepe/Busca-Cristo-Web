@@ -162,7 +162,7 @@ a {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 70vh;
+    height: 700px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -180,4 +180,10 @@ a {
 }
 
 
+@media (max-width: 800px){
 
+    .fondo{
+        background-position: center center;
+    }
+
+}
