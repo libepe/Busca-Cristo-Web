@@ -13,36 +13,40 @@
 <body>
     <container>
             <div id="header"></div>
-            <div id="fondo">
-                <h1 id="titulo">La restauración</h1>
+            <div class="fondo fondo-restauracion">
+                <h1 class="titulo">La iglesia restaurada</h1>
             </div>
             <main>
                 <div id="submenu">
-                    <div class="subapartado" id="libromormon" onclick="scrollToMormon()">El Libro de Mormón</div>
-                    <div class="subapartado" id="josesmith" onclick="scrollToJoseSmith()">José Smith</div>
-                    <div class="subapartado" id="apostasia" onclick="scrollToApostasia()">La Apostasía</div>
+                    <div class="subapartado" onclick="goDiv('seccion-libromormon')">El Libro de Mormón</div>
+                    <div class="subapartado" onclick="goDiv('seccion-josesmith')">José Smith</div>
+                    <div class="subapartado" onclick="goDiv('seccion-apostasia')">La Apostasía</div>
                 </div>
                 <div id="secciones">
                     <div class="seccion" id="seccion-libromormon">
                         <p class="seccion-titulo">El Libro de Mormón</p>
-                        <p class="seccion-texto seccion-texto-1">El Libro de Mormón es otro testamento de Jesucristo. Es escritura sagrada, como la Biblia.
-                            La Biblia trata principalmente de la vida y las enseñanzas del pueblo del antiguo Israel. El Libro de Mormón, por otra parte, contiene las tradiciones de los pueblos índigenas americanos que también creían en Jesucristo.
-                            El Libro de Mormón y la Biblia contienen las mismas enseñanzas, pero fueron escritos en diferentes partes del mundo. Nosotros, como miembros de la Iglesia de Jesucristo, creemos que el Libro de Mormón contiene la plenitud del evangelio de Jesucristo.
-                        </p>
-                        <div class="seccion-img">
-                            <img src="images/libromormon.webp" alt="libromormon">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="slide slide-1">
+                            <p class="seccion-subtitulo">¿Qué es?</p>
+                            <p class="seccion-texto">El Libro de Mormón es otro testamento de Jesucristo. Es escritura sagrada, como la Biblia.
+                                La Biblia trata principalmente de la vida y las enseñanzas del pueblo del antiguo Israel. El Libro de Mormón, por otra parte, contiene las tradiciones de los pueblos índigenas americanos que también creían en Jesucristo.
+                                El Libro de Mormón y la Biblia contienen las mismas enseñanzas, pero fueron escritos en diferentes partes del mundo. Nosotros, como miembros de la Iglesia de Jesucristo, creemos que el Libro de Mormón contiene la plenitud del evangelio de Jesucristo.
+                            </p>
+                            <p class="seccion-texto">
+                                Comienza con el relato de una familia que vivía en Jerusalén aproximadamente 600 años antes del nacimiento de Cristo. Tras ser advertidos por Dios, huyeron de Jerusalén para escapar de la destrucción de la ciudad. Atravesaron el mar para poblar una tierra prometida en la antigua América. Más tarde, el pueblo se dividió en dos naciones y, entretanto, se describen los tratos de Dios con estas naciones.
+                                El acontecimiento final en el Libro de Mormón es el ministerio personal del Jesucristo resucitado a la gente. El Libro de Mormón explica claramente lo que Cristo enseñó. Explica cómo podemos recibir la alegría en esta vida y la salvación en la vida venidera.
+                            </p>
                         </div>
-                        <p class="seccion-subtitulo">¿Qué es?</p>
-                        <p class="seccion-texto">
-                            El Libro de Mormón comienza con el relato de una familia que vivía en Jerusalén aproximadamente 600 años antes del nacimiento de Cristo. Tras ser advertidos por Dios, huyeron de Jerusalén para escapar de la destrucción de la ciudad. Atravesaron el mar para poblar una tierra prometida en la antigua América. Más tarde, el pueblo se dividió en dos naciones y, entretanto, se describen los tratos de Dios con estas naciones.
-                            El acontecimiento final en el Libro de Mormón es el ministerio personal del Jesucristo resucitado a la gente. El Libro de Mormón explica claramente lo que Cristo enseñó. Explica cómo podemos recibir la alegría en esta vida y la salvación en la vida venidera.
-                        </p>
-                        <p class="seccion-subtitulo">¿Quién escribió el Libro de Mormón?</p>
-                        <p class="seccion-texto">
-                            Profetas que vivieron en la antigua América escribieron el Libro de Mormón. Estos profetas registraron su historia, profecías y enseñanzas en planchas de metal encuadernadas. Los escritos fueron resumidos y abreviados por un profeta e historiador llamado Mormón.
-                            Tras la muerte de Mormón, su hijo Moroni completó los registros. Dios le dijo a Moroni que escondiera las planchas y le prometió que un día volverían a aparecer.
-                            A principios del siglo XIX, esta promesa se cumplió. Dios llamó a un joven llamado José Smith para traducir las planchas y restaurar la Iglesia de Jesucristo. Por consiguiente fue el primer profeta moderno, y por el poder de Dios tradujo las planchas en lo que ahora se conoce como el Libro de Mormón. 
-                        </p>
+                        <div class="slide slide-2">
+                            <p class="seccion-subtitulo">¿Quién escribió el Libro de Mormón?</p>
+                            <p class="seccion-texto">
+                                Profetas que vivieron en la antigua América escribieron el Libro de Mormón. Estos profetas registraron su historia, profecías y enseñanzas en planchas de metal encuadernadas. Los escritos fueron resumidos y abreviados por un profeta e historiador llamado Mormón.
+                                Tras la muerte de Mormón, su hijo Moroni completó los registros. Dios le dijo a Moroni que escondiera las planchas y le prometió que un día volverían a aparecer.
+                                A principios del siglo XIX, esta promesa se cumplió. Dios llamó a un joven llamado José Smith para traducir las planchas y restaurar la Iglesia de Jesucristo. Por consiguiente fue el primer profeta moderno, y por el poder de Dios tradujo las planchas en lo que ahora se conoce como el Libro de Mormón. 
+                            </p>
+                        </div>
                     </div>
                     <div class="seccion" id="seccion-josesmith">
                         <p class="seccion-titulo">José Smith</p>

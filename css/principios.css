@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.fondo-principios {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/convenios.webp');
+}
+
+#principios{
+    color: gold;
+}
+
+/*MAIN*/
+
+main{
+    background-image: url('../images/fondoflecha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#convenios{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0;
+}
+
+.convenio{
+    width: 100%;
+    background-color: purple;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    z-index: 1;
+}
+
