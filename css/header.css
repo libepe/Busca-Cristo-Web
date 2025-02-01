@@ -32,11 +32,12 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: background-color 0.7s;
+    transition: background-color 0.7s,box-shadow 0.7s;
 }
    
 #fixedheader.scrolled {
     background-color: rgba(45, 81, 92);
+    box-shadow: 0 5px 0 rgb(111, 150, 170);
 }
 
 .p{
@@ -158,7 +159,6 @@ a {
 .fondo {
     width: 100%;
     position: relative;
-    border-bottom: 10px solid rgb(111, 150, 170);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
