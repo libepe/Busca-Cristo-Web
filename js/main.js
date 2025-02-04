@@ -59,6 +59,19 @@ function laApostasia(){
 };
 
 
+//SENDA DE LOS CONVENIOS
+
+function abreConvenio(){
+    const convenio=document.querySelectorAll('.convenio');
+    for(let i=0;i<convenio.length;i++){
+        convenio[i].addEventListener('click',function(){
+            convenio[i].classList.toggle('rotar');
+        });
+    }
+};
+abreConvenio();
+
+
 
 
 
