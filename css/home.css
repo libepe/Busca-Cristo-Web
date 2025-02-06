@@ -127,10 +127,6 @@ body, html {
     .pagina-comunidad{
         grid-column: span 1;
     }
-
-    #fondohome{
-        height: 600px;
-    }
     
 }
 
