@@ -4,26 +4,43 @@
     box-sizing: border-box;
 }
 
-.fondo-principios {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/convenios.webp');
+.fondo-cristo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/orando.webp');
 }
 
-#principios{
+#cristo{
     color: gold;
 }
 
 /*MAIN*/
 
+#introcristo{
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#introcristo-texto{
+    color: rgb(111, 150, 170);
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+}
+
 #convenios{
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 
 .fa-down-long{
-    color: rgb(111, 150, 170);
+    color: rgba(45, 81, 92);
     text-align: center;
+    padding: 30px;
     font-size: 100px;
+    border: 5px solid rgb(111, 150, 170);
 }
 
 .convenio{
@@ -49,10 +66,15 @@
 }
 
 .convenio-front{
-    background-color: rgba(45, 81, 92);
     color: white;
     text-transform: uppercase;
     font-size: 70px;
+    background-color: rgba(45, 81, 92);
+    transition: color 0.5s;
+}
+
+.convenio-front:hover{
+    color: gold;
 }
 
 .numero{
@@ -64,7 +86,7 @@
     background-color: white;
     transform: rotateY(180deg);
     color: rgba(45, 81, 92);
-    border: 3px solid rgba(45, 81, 92);
+    border: 5px solid rgba(45, 81, 92);
     font-size: 50px;
 }
 

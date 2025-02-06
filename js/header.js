@@ -1,36 +1,65 @@
-fetch('header.html')
-    .then(response=>response.text())
-    .then(data=>{
-        document.getElementById('header').innerHTML=data;
+document.addEventListener('DOMContentLoaded', () => {
+    const headerDiv=document.getElementById('header');
+    if (!headerDiv) {
+        console.error("#header not found!");
+        return;
+    }
+    loadHeader();
 
-            const language=document.getElementById('language');
-            const selected=document.getElementById('selected');
+    window.addEventListener('scroll', handleScroll);
 
-            selected.addEventListener('click', () => {
-                language.classList.toggle('languages');
-            });
-    });
+    const goTopButton = document.getElementById('go-top');
+    if (goTopButton) {
+        goTopButton.addEventListener('click', scrollToTop);
+    }
+});
 
-    function scrollToTop(){
+function loadHeader() {
+    const headerDiv =document.getElementById('header');
+    fetch('header.html')
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.text();
+        })
+        .then(data => {
+            headerDiv.innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
+}
+
+
+function setupLanguageToggle() {
+    const language = document.getElementById('language');
+    const selected = document.getElementById('selected');
+
+    if (language && selected) {
+        selected.addEventListener('click', () => {
+            language.classList.toggle('languages');
+        });
+    } else {
+        console.error("Either language or selected is missing!");
+    }
+}
+
+
+function scrollToTop(){
         window.scrollTo({
             top: 0,
             behavior: "smooth"
-    })};
+})};
 
-window.addEventListener('scroll', () => {
-    const fixedheader=document.getElementById('fixedheader');
-    const gotop=document.getElementById('go-top');
 
-    if(window.scrollY>10) {
-        fixedheader.classList.add('scrolled');
-    }else{
-        fixedheader.classList.remove('scrolled'); 
+function handleScroll() {
+    const fixedheader = document.getElementById('fixedheader');
+    const gotop = document.getElementById('go-top');
+
+    if (fixedheader) {
+        fixedheader.classList.toggle('scrolled', window.scrollY > 10);
     }
 
-    if(window.scrollY>=500){
-        gotop.classList.add('scrolltop');
-    }else{
-        gotop.classList.remove('scrolltop');
+    if (gotop) {
+        gotop.classList.toggle('scrolltop', window.scrollY >= 500);
     }
+}
 
-});
+
