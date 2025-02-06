@@ -183,5 +183,9 @@ a {
         background-position: center center;
     }
 
+    .fondo{
+        height: 400px;
+    }
+
 
 }
