@@ -41,68 +41,67 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
 }
 
 .seccion{
-    box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: none;
-}
-
-.subseccion{
-    padding: 50px;
-    margin: 0;
-    width: 100%;
-}
-
-.subseccion-separador{
-    border-top: 5px solid rgba(45, 81, 92);
-    border-bottom: 5px solid rgba(45, 81, 92);
-    background-color: gold;
-    height: 15px;
 }
 
 .seccion-titulo{
+    width: 100%;
     color: white;
     font-weight: bold;
     font-size: 60px;
-    font-family: 'Roboto';
+    height: 400px;
     text-transform: uppercase;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
     background-color: rgba(45, 81, 92);
-    border-top: 10px solid rgb(111, 150, 170);
-    padding: 70px;
 }
 
-.seccion-subtitulo{
-    color: rgba(45, 81, 92);
-    font-weight: bold;
-    font-size: 50px;
-    font-family: 'Roboto';
-    padding: 20px;
+.seccion-titulo i{
+    font-size: 40px;
 }
 
 .seccion-texto{
-    text-align: justify;
-    color: black;
-    font-family: 'Roboto';
-    line-height: 40px;
-    font-size: 20px;
+    width: 100%;
+    background-color: saddlebrown;
+    color: white;
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: height 0.5s, opacity 0.5s;
 }
 
-.seccion-default{
-    display: block;
+.seccion-texto p{
+    padding: 20px;
 }
 
-.escoge{
-    display: block;
+.expande{
+    height: 300px;
+    opacity: 1;
 }
 
-.escoge-menu{
-    color: gold;
+.gira{
+    rotate: 180deg;
 }
+
 
 
 

@@ -4,6 +4,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #fondohome {
@@ -37,10 +38,9 @@ body, html {
     align-items: center; 
     justify-content: center;
     text-align: center;
-    border-radius: 30px;
     z-index: 1;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px;
     box-sizing: border-box;
     padding: 50px;
     overflow: hidden;
@@ -69,10 +69,11 @@ body, html {
 
 
 #paginas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    display: flex;
+    width: 97%;
+    justify-content: center;
     gap: 10px;
+    margin: 0 auto;
 }
 
 .pagina{
@@ -80,56 +81,67 @@ body, html {
     height: 400px;
     display: flex;
     justify-content: center;
+    gap: 30px;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    background-position: top;
-    cursor: pointer;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-size 0.7s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 
-.pagina p{
+.mantener.pagina .pagina-titulo,.mantener.pagina .pagina-subtitulo{
+    color: gold;
+}
+
+
+.pagina-titulo{
+    width: 100%;
     color: white;
     font-weight: bold;
     font-size: 50px;
     font-family: 'Georgia',serif;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    transition: color 0.5s;
 }
 
-.pagina:hover p{
-    color: gold;
+.pagina-subtitulo{
+    color: white;
+    font-size: 30px;
+}
+
+.pagina-titulo,.pagina-subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .pagina-restauracion{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../images/restauracion.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('../images/restauracion.jpeg');
+    background-position: 0 10%;
 }
 
 .pagina-cristo{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../images/orando.webp');
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('../images/orando.webp');
+    background-position: 0 20%;
 }
 
 .pagina-comunidad{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../images/actividad.webp');
-    grid-column: span 2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('../images/actividad.webp'); 
     background-position: 0 30%;
-
 }
 
 
 @media (max-width: 800px){
 
     #paginas{
-        grid-template-columns: 1fr;
-
+        flex-direction: column;
     }
 
-    .pagina-comunidad{
-        grid-column: span 1;
-    }
+
+    
     
 }
 

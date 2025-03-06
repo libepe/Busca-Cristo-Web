@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("#header not found!");
         return;
     }
+
     loadHeader();
+    loadFooter();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -12,10 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (goTopButton) {
         goTopButton.addEventListener('click', scrollToTop);
     }
+
 });
 
+//HEADER and FOOTER loaders
+
 function loadHeader() {
-    const headerDiv =document.getElementById('header');
+    const headerDiv=document.getElementById('header');
     fetch('header.html')
         .then(response => {
             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
@@ -27,6 +32,21 @@ function loadHeader() {
         .catch(error => console.error("Error loading header:", error));
 }
 
+
+function loadFooter(){
+    const footerDiv=document.getElementById('footer');
+    fetch('footer.html')
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.text();
+        })
+        .then(data => {
+            footerDiv.innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+}
+
+//HEADER
 
 function setupLanguageToggle() {
     const language = document.getElementById('language');
@@ -61,5 +81,7 @@ function handleScroll() {
         gotop.classList.toggle('scrolltop', window.scrollY >= 500);
     }
 }
+
+
 
 
