@@ -48,23 +48,19 @@ function efectoNoMantenido(event) {
     }
 }
 
-const divClicks1=document.querySelectorAll('.convenio-front');
-const divClicks2=document.querySelectorAll('.pagina');
+const divClicks=document.querySelectorAll('.convenio-front, .pagina, .seccion-titulo');
 
 
-divClicks1.forEach((div) => {
+
+
+divClicks.forEach((div) => {
     div.addEventListener('pointerdown', efectoMantenido);
     div.addEventListener('pointerup', efectoNoMantenido);
     div.addEventListener('pointerleave', efectoNoMantenido);
     div.addEventListener('pointercancel', efectoNoMantenido);
 });
 
-divClicks2.forEach((div) => {
-    div.addEventListener('pointerdown', efectoMantenido);
-    div.addEventListener('pointerup', efectoNoMantenido);
-    div.addEventListener('pointerleave', efectoNoMantenido);
-    div.addEventListener('pointercancel', efectoNoMantenido);
-});
+
 
 
 
