@@ -48,7 +48,7 @@ function efectoNoMantenido(event) {
     }
 }
 
-const divClicks=document.querySelectorAll('.convenio-front, .pagina, .seccion-titulo');
+const divClicks=document.querySelectorAll('.convenio-front');
 
 
 

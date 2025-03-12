@@ -13,3 +13,35 @@
 }
 
 /*MAIN*/
+
+#reuniones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.reunion{
+    background-color: aqua;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reunion p{
+    color: white;
+    
+}
+
+
+@media (max-width: 800px){
+
+    #reuniones{
+        grid-template-columns: 1fr;
+    }
+
+    
+}
