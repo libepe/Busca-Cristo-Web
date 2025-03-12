@@ -83,5 +83,12 @@ function handleScroll() {
 }
 
 
+function menuMovil(){
+    const navbars=document.getElementById('navbars');
+
+    
+}
+
+
 
 

@@ -13,7 +13,7 @@
     justify-content: center;
     position: relative;
     width: 0;
-    margin: 0 40px;
+    padding: 0;
 }
 
 #logo img{
@@ -24,13 +24,11 @@
     height: 80px;
     width: 100%;
     z-index: 5;
-    padding: 0;
-    margin: 0;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    gap: 60px;
     transition: background-color 0.7s,box-shadow 0.7s;
 }
    
@@ -38,11 +36,6 @@
     background-color: rgba(45, 81, 92);
     box-shadow: 0 5px 0 rgb(111, 150, 170);
 }
-
-.p{
-    margin: 0 40px;
-}
-
 
 .p-apartado {
     font-family: 'Roboto',sans-serif;
@@ -142,6 +135,13 @@
 #go-top-arrow{
     font-size: 25px;
     color: white;
+}
+
+@media (max-width: 800px){
+
+ 
+
+
 }
 
 /*GENERAL STYLES*/

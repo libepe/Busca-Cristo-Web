@@ -17,6 +17,7 @@
     width: 100%;
     gap: 20px;
     background-color: rgb(111, 150, 170);
+    display: none;
 }
 
 .subapartado{
@@ -51,9 +52,6 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    background-color: rgba(45, 81, 92);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .libromormon{
@@ -63,7 +61,7 @@
 
 .josesmith{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../images/josesmith.webp');
-    background-position: 0% 25%;
+    background-position: 0% 20%;
 }
 
 .apostasia{
@@ -76,7 +74,7 @@
     color: white;
     font-weight: bold;
     font-size: 60px;
-    height: 400px;
+    height: 500px;
     text-transform: uppercase;
     display: flex;
     gap: 50px;
@@ -86,6 +84,8 @@
     text-align: center;
     cursor: pointer;
     z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .seccion-titulo i{
@@ -95,7 +95,7 @@
 
 .seccion-texto{
     width: 100%;
-    color: white;
+    color: rgba(45, 81, 92);
     height: 0;
     opacity: 0;
     padding: 0;
@@ -103,12 +103,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-color: white;
+    border: 5px rgba(45, 81, 92);
+    border-style: none solid solid solid;
     transition: height 0.5s, opacity 0.5s;
 }
 
 .seccion-texto p{
     padding: 20px;
+    font-size: 20px;
 }
 
 .expande{
