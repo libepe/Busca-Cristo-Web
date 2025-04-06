@@ -10,14 +10,14 @@
 #logo{
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
-    width: 0;
+    cursor: pointer;
     padding: 0;
+    gap: 5px;
 }
 
 #logo img{
-    transform: scale(0.1);
+    height: 80px;
 }
 
 #fixedheader{
@@ -37,7 +37,7 @@
     box-shadow: 0 5px 0 rgb(111, 150, 170);
 }
 
-.p-apartado {
+.apartado {
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -48,7 +48,7 @@
     white-space: nowrap;
 }
 
-.p-apartado a{
+.apartado a{
     text-decoration: none;
     color: inherit;
     display: block;
@@ -57,7 +57,7 @@
     padding: 0;
 }
 
-.p-apartado:hover {
+.apartado:hover {
     color: gold;
 }
 
@@ -169,13 +169,13 @@ a {
     text-align: center;
     justify-content: center;
     z-index: 0;
+    clip-path: ellipse(100% 100% at 50% 0%);
 }
 
 .titulo{
     color: white;
-    text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'Georgia',serif;
 }
@@ -247,11 +247,6 @@ footer{
 
 @media (max-width: 800px){
 
-    footer{
-        flex-direction: column;
-        height: 500px;
-        gap: 40px;
-    }
 
     
 

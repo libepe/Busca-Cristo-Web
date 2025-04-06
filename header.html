@@ -11,14 +11,14 @@
 </head>
 <body>
         <div id="fixedheader">
-            <a href="index.html" id="logo">
-                <img src="/images/logobuscacristo.png" alt="logo"></img>
-            </a>
-                <p id="cristo" class="p p-apartado"><a href="cristo.html">Acércate a Cristo</a></p>
-                <p id="comunidad" class="p p-apartado"><a href="comunidad.html">¡Reúnete con nosotros!</a></p>
-                <p id="restauracion" class="p p-apartado"><a href="restauracion.html">Una iglesia restaurada</a></p>
-                <p id="sobrenosotros" class="p p-apartado"><a href="sobrenosotros.html">Sobre nosotros</a></p>
-                <div id="language" class="p">
+                <div id="logo" onclick="window.location.href='index.html'">
+                    <img src="images/logobuscacristo.png" alt="logo">
+                </div>
+                <p id="cristo" class="apartado"><a href="cristo.html">Acércate a Cristo</a></p>
+                <p id="comunidad" class="apartado"><a href="comunidad.html">¡Reúnete con nosotros!</a></p>
+                <p id="restauracion" class="apartado"><a href="restauracion.html">Profundiza</a></p>
+                <p id="sobrenosotros" class="apartado"><a href="sobrenosotros.html">Sobre nosotros</a></p>
+                <div id="language">
                     <div id="selected"><span class="fi fi-es"></span></div>
                     <ul id="options">
                         <li class="option"><span class="fi fi-es"></span></li>
@@ -26,7 +26,7 @@
                         <li class="option"><span class="fi fi-gb"></span></li>
                     </ul>
                 </div>
-                <div id="search" class="p">
+                <div id="search">
                     <input id="searchfield" type="text" placeholder="Search here...">
                     <i class="fas fa-search"></i>
                 </div>

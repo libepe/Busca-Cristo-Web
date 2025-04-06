@@ -12,39 +12,37 @@
     <container>
             <div id="header"></div>
             <div id="fondohome">
-                <h1 id="titulohome">Busca a cristo</h1>
+                <div class="titular">
+                    <h1>Busca a cristo <span>en España</span></h1>
+                </div>
+                <div class="fondoboton" onclick="window.location.href='sobrenosotros.html'">Sobre nosotros<i class="fa-solid fa-angles-right"></i></div>
             </div>
             <main>
-                <div id="container">
-                    <br>
-                    <div id="sobrenosotros-boton" onclick="window.location.href='sobrenosotros.html'">
-                        <p>Sobre nosotros</p>
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                <br>
+                <div id="buscacapilla">
+                    <p>¡Encuentra tu capilla más cercana!</p>
+                    <div id="mapa">
+                        <button id="vermapa">VER MAPA</button>
+                        <div id="cubremapa"></div>
+                        <iframe title="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1P7gvQ5zWI_eWmrDEHeLq6Ru2elMbz8w&ehbc=2E312F&noprof=1"></iframe>
                     </div>
-                    <br>
-                    <br>
                 </div>
+                <br>
                 <div id="paginas">
-                        <div class="pagina pagina-comunidad">
-                            <p class="pagina-titulo p">¡Reúnete con nosotros!</p>
-                            <p class="pagina-subtitulo">Ven para diverirte y aprender más con nosotros, hacemos reuniones y actividades</p>
-                            <button type="button" class="pagina-boton" onclick="window.location.href='comunidad.html'">Aprende más</button>
-                        </div>
-                        <div class="pagina pagina-restauracion">
-                            <p class="pagina-titulo p">Una iglesia restaurada</p>
-                            <p class="pagina-subtitulo">Conoce nuestros orígenes y El Libro de Mormón</p>
-                            <button type="button" class="pagina-boton" onclick="window.location.href='restauracion.html'">Aprende más</button>
-                        </div>
-                        <div class="pagina pagina-cristo">
-                            <p class="pagina-titulo p">Acércate a Cristo</p>
-                            <p class="pagina-subtitulo">Busca bendiciones y Cristo te las dará</p>
-                            <button type="button" class="pagina-boton" onclick="window.location.href='cristo.html'">Aprende más</button>
-                        </div>
+                    <div class="pagina pagina-cristo" onclick="window.location.href='cristo.html'">
+                        <p class="pagina-titulo p">Acércate a Cristo</p>
+                        <p class="pagina-subtitulo">Busca bendiciones y Cristo te las dará</p>
+                    </div>
+                    <div class="pagina pagina-comunidad" onclick="window.location.href='comunidad.html'">
+                        <p class="pagina-titulo p">¡Reúnete con nosotros!</p>
+                        <p class="pagina-subtitulo">Ven para pasártelo bien y sentir el amor de Cristo con nosotros</p>
+                    </div>
+                    <div class="pagina pagina-restauracion" onclick="window.location.href='restauracion.html'">
+                        <p class="pagina-titulo p">Profundiza</p>
+                        <p class="pagina-subtitulo">Conoce nuestro origen y más creencias nuestras</p>
+                    </div>
                 </div>
-                <div id="historia">
-                    <p class="historia-titulo">La Iglesia de Jesucristo en España</p>
-                    <hr class="linea">
-                </div>
+                <br>
             </main>
             <div id="footer"></div>
     </container>

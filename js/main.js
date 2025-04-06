@@ -35,22 +35,22 @@ function abreConvenio(){
 abreConvenio();
 
 //ALL
-
 function efectoMantenido(event) {
+    console.log('Pointer Down');
     if (event.button === 0 || event.pointerType === "touch") {
         event.currentTarget.classList.add('mantener');
     }
 }
 
 function efectoNoMantenido(event) {
+    console.log('Pointer Up');
     if (event.button === 0 || event.pointerType === "touch") {
         event.currentTarget.classList.remove('mantener');
     }
 }
 
-const divClicks=document.querySelectorAll('.convenio-front');
 
-
+const divClicks=document.querySelectorAll('.convenio-front, .pagina');
 
 
 divClicks.forEach((div) => {
@@ -62,6 +62,8 @@ divClicks.forEach((div) => {
 
 
 
+
+//HOME
 
 
 

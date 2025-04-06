@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body, html {
     margin: 0;
@@ -7,60 +8,149 @@ body, html {
     box-sizing: border-box;
 }
 
+/* SLIDESHOW FONDOS */
+
 #fondohome {
     width: 100%;
     position: relative;
     height: 900px;
+    z-index: 0;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-image: url('../images/home.webp');
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.titular{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center; 
+    align-items: center; 
+    gap: 30px;
+}
+
+.titular-buscacristo h1{
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script';
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px black;
+}
+
+.titular-buscacristo span{
+    font-family: 'Cinzel';
+    font-size: 70px;
+    text-transform: none;
+
+}
+
+.titular h1{
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script';
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px black;
+}
+
+.titular span{
+    font-family: 'Cinzel';
+    font-size: 70px;
+    text-transform: none;
+}
+
+.fondoboton{
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    background-color: rgba(45, 81, 92);
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/home.webp');
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    z-index: 0;
-}
-
-#titulohome{
-    color: white;
-    text-transform: capitalize;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-size: 80px;
-    font-weight: bold;
-    font-family: 'Georgia',serif;
-}
-
-#sobrenosotros-boton{
-    height: 200px;
-    width: 95%;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-    background-color: rgb(45,81,92);
-    color: white;
-    font-size: 40px;
-    text-transform: uppercase;  
-    font-weight: bold;
     cursor: pointer;
-    margin: 0 auto;
-    border-radius: 30px;
-    border: 5px solid rgb(111, 150, 170);
-    box-shadow: 0 15px 30px black;
+    gap: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
     transition: background-color 0.5s;
 }
 
-#sobrenosotros-boton:hover{
+.fondoboton:hover{
     background-color: rgb(111, 150, 170);
+}
+
+
+
+/* RESTO DE PAGINA */
+#buscacapilla{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    display: none;
+}
+
+#buscacapilla p{
+    color: rgba(45, 81, 92);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#mapa{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border: 5px solid rgba(45, 81, 92);
+    overflow: hidden;
+}
+
+#mapa #vermapa{
+    background-color: rgba(45, 81, 92);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#mapa #cubremapa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.navegarmapa{
+    pointer-events: none;
 }
 
 #paginas{
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
 }
 
@@ -75,13 +165,16 @@ body, html {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
-.mantener.pagina .pagina-titulo,.mantener.pagina .pagina-subtitulo{
+.pagina:hover p{
     color: gold;
 }
 
+.mantener.pagina p{
+    color: gold;
+}
 
 .pagina-titulo{
     width: 100%;
@@ -90,7 +183,7 @@ body, html {
     font-size: 50px;
     font-family: 'Georgia',serif;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 4px 15px black;
 }
 
 .pagina-subtitulo{
@@ -98,31 +191,17 @@ body, html {
     font-size: 30px;
 }
 
-.pagina-boton{
-    padding: 20px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: rgb(45,81,92);
-    transition: background-color 0.5s;
-}
-
-.pagina-boton:hover{
-    background-color: rgb(111, 150, 170);
-}
 
 .pagina-titulo,.pagina-subtitulo{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: color 0.5s;
 }
 
 .pagina-restauracion{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('../images/restauracion.jpeg');
-    background-position: 0 10%;
 }
 
 .pagina-cristo{
@@ -133,25 +212,6 @@ body, html {
 .pagina-comunidad{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url('../images/actividad.webp'); 
     background-position: 0 30%;
-}
-
-#historia{
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 100px;
-}
-
-.historia-titulo{
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(45,81,92);
-    font-family: 'Georgia',serif;
 }
 
 
