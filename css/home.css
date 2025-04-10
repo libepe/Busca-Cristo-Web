@@ -73,7 +73,7 @@ body, html {
 
 #bienvenida{
     width: 100%;
-    height: 40vh;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
