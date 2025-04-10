@@ -13,7 +13,7 @@ body, html {
 #fondohome {
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 90vh;
     z-index: 0;
     background-size: cover;
     background-position: top;
@@ -41,14 +41,14 @@ body, html {
     font-size: 120px;
     font-weight: bold;
     text-transform: capitalize;
-    font-family: 'Kaushan Script';
+    font-family: 'Kaushan Script',serif;
     display: flex;
     flex-direction: column;
     text-shadow: 2px 2px 5px black;
 }
 
 .titular-buscacristo span{
-    font-family: 'Cinzel';
+    font-family: 'Cinzel',serif;
     font-size: 70px;
     text-transform: none;
 
@@ -59,14 +59,14 @@ body, html {
     font-size: 120px;
     font-weight: bold;
     text-transform: capitalize;
-    font-family: 'Kaushan Script';
+    font-family: 'Kaushan Script',serif;
     display: flex;
     flex-direction: column;
     text-shadow: 2px 2px 5px black;
 }
 
 .titular span{
-    font-family: 'Cinzel';
+    font-family: 'Cinzel',serif;
     font-size: 70px;
     text-transform: none;
 }
