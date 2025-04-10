@@ -29,20 +29,28 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .creencia p{
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 
-
-.mantener.convenio-front p{
-    color: gold;
+.creencia-oracion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/fondocreemos.webp');
 }
 
+.creencia-libromormon{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/escrituras.webp');
+}
+
+.creencia-bautismo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/bautismo.webp');
+}
 
 
 @media (max-width: 800px){
