@@ -13,7 +13,7 @@ body, html {
 #fondohome {
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     z-index: 0;
     background-size: cover;
     background-position: top;
