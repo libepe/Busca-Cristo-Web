@@ -37,7 +37,6 @@ body, html {
 }
 
 .titular-buscacristo h1{
-    color: white;
     font-size: 120px;
     font-weight: bold;
     text-transform: capitalize;
@@ -55,7 +54,7 @@ body, html {
 }
 
 .titular h1{
-    color: white;
+    color: red;
     font-size: 120px;
     font-weight: bold;
     text-transform: capitalize;
