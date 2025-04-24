@@ -7,17 +7,25 @@
 
 /*HEADER*/
 
+#menu{
+    display: none;
+}
+
 #logo{
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
     padding: 0;
-    gap: 5px;
+    gap: 40px;
 }
 
 #logo img{
     height: 80px;
+}
+
+#barras{
+    display: none;
 }
 
 #fixedheader{
@@ -139,7 +147,36 @@
 
 @media (max-width: 800px){
 
- 
+    .h{
+        display: none;
+    }
+
+    #barras{
+        display: block;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+
+    }
+
+    #menu{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(45,81,92);
+        height: 100vh;
+        z-index: -1;
+        color: white;
+        
+    }
+
+    .abremenu{
+        display: flex !important;
+    }
+
 
 
 }

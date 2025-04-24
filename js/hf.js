@@ -27,7 +27,8 @@ function loadHeader() {
             return response.text();
         })
         .then(data => {
-            headerDiv.innerHTML = data;
+            headerDiv.innerHTML=data;
+            menuMovil();
         })
         .catch(error => console.error("Error loading header:", error));
 }
@@ -84,9 +85,13 @@ function handleScroll() {
 
 
 function menuMovil(){
-    const navbars=document.getElementById('navbars');
+    const barras=document.getElementById('barras');
+    const menu=document.getElementById('menu');
 
-    
+    barras.addEventListener('click',()=>{
+        console.log('triggred');
+        menu.classList.toggle('abremenu');
+    })
 }
 
 
