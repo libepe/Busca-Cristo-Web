@@ -87,10 +87,16 @@ function handleScroll() {
 function menuMovil(){
     const barras=document.getElementById('barras');
     const menu=document.getElementById('menu');
+    const fixedheader=document.getElementById('fixedheader');
 
     barras.addEventListener('click',()=>{
-        console.log('triggred');
         menu.classList.toggle('abremenu');
+
+        if(menu.classList.contains('abremenu')){
+            fixedheader.style.backgroundColor='rgb(45,81,92)';
+        }else{
+            fixedheader.style.backgroundColor='';
+        }
     })
 }
 

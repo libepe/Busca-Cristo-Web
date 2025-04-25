@@ -160,25 +160,28 @@
     }
 
     #menu{
-        display: none;
+        display: flex;
         position: absolute;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         background-color: rgb(45,81,92);
-        height: 100vh;
         z-index: -1;
         color: white;
-        
+        gap: 30px;
+        margin-top: 300px;
+        padding: 50px;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+        transition: pointer-events 0.7s, opacity 0.7s;
     }
 
     .abremenu{
-        display: flex !important;
+        pointer-events: all !important;
+        opacity: 1 !important;
     }
-
-
-
 }
 
 /*GENERAL STYLES*/
@@ -282,6 +285,12 @@ footer{
 }
 
 @media (max-width: 800px){
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 50px;
+    }
 
 
     
