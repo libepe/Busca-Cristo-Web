@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.fondo-comunidad {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/actividad.webp');
+}
+
+#actividades{
+    color: gold;
+}
+
+/*MAIN*/
+
+#reuniones{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.reunion{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px black;
+}
+
+.reunion-destacado{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.reunion p{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 0 4px 15px black;
+}
+
+.misioneros{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/misioneros.webp');
+    background-position: 0% 50%;
+}
+
+.capilla{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/clasecuorum.webp');
+    background-position: 0% 50%;
+}
+
+.actividades{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/basket.webp');
+    background-position: 0% 10%;
+}
+
+@media (max-width: 800px){
+
+    #reuniones{
+        grid-template-columns: 1fr;
+    }
+
+    
+}

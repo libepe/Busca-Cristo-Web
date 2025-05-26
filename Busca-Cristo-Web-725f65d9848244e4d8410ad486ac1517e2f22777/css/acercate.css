@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.fondo-cristo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/orando.webp');
+}
+
+#acercate{
+    color: gold;
+}
+
+/*MAIN*/
+
+#creencias{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.creencia{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.creencia p{
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+.creencia-oracion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/fondocreemos.webp');
+}
+
+.creencia-libromormon{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/escrituras.webp');
+}
+
+.creencia-bautismo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/bautismo.webp');
+}
+
+
+@media (max-width: 800px){
+
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
