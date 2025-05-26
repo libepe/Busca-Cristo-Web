@@ -70,7 +70,7 @@ divClicks.forEach((div) => {
 //HOME
 
 function slideShow(){
-    const fondohome=document.querySelectorAll('.fondohome');
+    const fondohome=document.querySelector('.fondohome');
 
     let i=0;
 

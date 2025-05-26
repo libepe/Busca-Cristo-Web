@@ -17,7 +17,7 @@
 #reuniones{
     width: 99%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin: 0 auto;
 }
@@ -51,11 +51,6 @@
     flex-direction: column;
     gap: 10px;
     text-shadow: 0 4px 15px black;
-}
-
-.misioneros{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/misioneros.webp');
-    background-position: 0% 50%;
 }
 
 .capilla{

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    const goTopButton = document.getElementById('go-top');
+    const goTopButton =document.getElementById('go-top');
     if (goTopButton) {
         goTopButton.addEventListener('click', scrollToTop);
     }
@@ -50,8 +50,8 @@ function loadFooter(){
 //HEADER
 
 function setupLanguageToggle() {
-    const language = document.getElementById('language');
-    const selected = document.getElementById('selected');
+    const language=document.getElementById('language');
+    const selected=document.getElementById('selected');
 
     if (language && selected) {
         selected.addEventListener('click', () => {
@@ -66,13 +66,13 @@ function setupLanguageToggle() {
 function scrollToTop(){
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            behavior: "smooth",
 })};
 
 
 function handleScroll() {
-    const fixedheader = document.getElementById('fixedheader');
-    const gotop = document.getElementById('go-top');
+    const fixedheader=document.getElementById('fixedheader');
+    const gotop=document.getElementById('go-top');
 
     if (fixedheader) {
         fixedheader.classList.toggle('scrolled', window.scrollY > 10);
@@ -91,6 +91,7 @@ function menuMovil(){
 
     barras.addEventListener('click',()=>{
         menu.classList.toggle('abremenu');
+        barras.classList.toggle('abremenu');
 
         if(menu.classList.contains('abremenu')){
             fixedheader.style.backgroundColor='rgb(45,81,92)';
@@ -99,7 +100,7 @@ function menuMovil(){
         }
     })
 }
-
+menuMovil();
 
 
 
