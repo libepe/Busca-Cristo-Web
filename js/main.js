@@ -70,16 +70,15 @@ divClicks.forEach((div) => {
 //HOME
 
 function slideShow(){
-    const fondohome=document.querySelector('.fondohome');
+    const fondohomes=document.querySelectorAll('.fondohome');
 
     let i=0;
 
     setInterval(()=>{
-        fondohome.style.opacity='0';
-        i=(i + 1) % fondos.length;
-        fondohome.style.opacity='1';
-         console.log('looped')
-    }, 1000)
+        fondohomes[i].style.opacity='0';
+        i=(i + 1) % fondohomes.length;
+        fondohomes[i].style.opacity='1';
+    }, 3000)
 
 };
 
