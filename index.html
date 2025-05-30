@@ -60,10 +60,24 @@
                     </div>
                 </div>
                 <br>
-                <div class="pagina pagina-contactos" onclick="window.location.href='contactos.html'">
-                        <p class="pagina-titulo p">Contactos</p>
-                        <p class="pagina-subtitulo">¡Póngase en contacto con los misioneros!</p>
+                <div id="contactanos">
+                    <div id="contactanos-intro">
+                        <p class="contactanos-titulo">Contacta con nosotros,<br><span class="grande">¡Los misioneros!</span></p>
+
                     </div>
+                    <form id="formulario-contacto">
+                        <div class="columna-form">
+                            <input class="form-input" type="text" id="nombres" name="nombres" placeholder="Nombre(s)">
+                            <input class="form-input" type="text" id="correo" name="correo" placeholder="Correo electrónico">
+                            <input class="form-input" type="text" id="postal" name="codigo-postal" placeholder="Código postal">
+                        </div>
+                        <div class="columna-form">
+                            <input class="form-input" type="text" id="apellidos" name="apellidos" placeholder="Apellido(s)">
+                            <input class="form-input" type="text" id="tel" name="telefono" placeholder="Teléfono">
+                            <input class="form-input" id="contacto-submit" type="submit" value="¡Contáctanos!">
+                        </div>
+                    </form>
+                </div>
                 <br>
             </main>
             <div id="footer"></div>

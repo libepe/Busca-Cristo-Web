@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
@@ -264,7 +264,7 @@ body, html {
 }
 
 .pagina-creemos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/jevangelio.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bautismo.webp');
     align-items: flex-start;
     padding-left: 150px;
     background-position: 0% 40%;
@@ -277,11 +277,83 @@ body, html {
     background-position: 0% 35%;
 }
 
-.pagina-contactos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/misioneros.webp');
-    align-items: flex-start;
-    padding-left: 150px;
-    background-position: 0% 25%;
+
+#contactanos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 10px black;
+}
+
+#contactanos-intro{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 50px;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/misioneros4.jpg');
+    background-size: cover;
+    background-position: 0% 10%;
+}
+
+.contactanos-titulo{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', serif;
+}
+
+.grande{
+    font-size: 60px;
+}
+
+#formulario-contacto{
+    height: 100%;
+    width: 40%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.form-input{
+    width: 100%;
+    height: 50px;
+    border: 3px solid rgba(45, 81, 92);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-input::placeholder{
+    color: gray;
+}
+
+.columna-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#contacto-submit{
+    background-color: rgba(45, 81, 92);
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+#contacto-submit:hover{
+    background-color: rgb(111, 150, 170);
 }
 
 
@@ -301,6 +373,15 @@ body, html {
 
     #paginas{
         flex-direction: column;
+    }
+
+    #contactanos{
+        flex-direction: column;
+        height: 700px;
+    }
+
+    #contactanos-intro, #formulario-contacto{
+        width: 100%;
     }
 
 
