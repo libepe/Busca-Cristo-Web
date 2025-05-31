@@ -13,6 +13,12 @@
 #intro-creencias{
     width: 100%;
     background-color: aqua;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: blue;
+    
 }
 
 #creencias{
@@ -24,7 +30,7 @@
 
 .creencia{
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-color: black;
     display: flex;
     text-align: center;
@@ -32,12 +38,18 @@
     justify-content: center;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+}
+
+.creencia:hover p{
+    color: gold;
 }
 
 .creencia p{
     color: white;
     font-weight: bold;
     font-size: 60px;
+    transition: color 0.5s;
 }
 
 

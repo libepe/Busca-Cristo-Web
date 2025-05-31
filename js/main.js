@@ -74,6 +74,10 @@ function slideShow(){
 
     let i=0;
 
+    fondohomes.forEach((el, index) => {
+        el.style.opacity=index==0 ? '1':'0';
+    });
+
     setInterval(()=>{
         fondohomes[i].style.opacity='0';
         i=(i + 1) % fondohomes.length;
