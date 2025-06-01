@@ -288,7 +288,7 @@ body, html {
 
 #testimonios{
     width: 100%;
-    display: flex;
+    display: none;
     height: 400px;
     box-shadow: 0 1px 10px black;
     gap: 20px;
@@ -391,6 +391,22 @@ body, html {
 
 @media (max-width: 800px){
 
+    #titular h1{
+        font-size: 100px;
+    }
+
+    #titular span{
+        font-size: 60px;
+    }
+
+    #titular h2{
+        font-size: 30px;
+    }
+
+    .fondohome{
+        background-position: 50% 0%;
+    }
+
     .pagina{
         align-items: center;
         justify-content: center;
@@ -398,7 +414,7 @@ body, html {
         text-align: center;
     }
 
-    #testimonios{
+    #preguntas{
         flex-direction: column;
         gap: 30px;
     }
@@ -409,16 +425,20 @@ body, html {
 
     #contactanos{
         flex-direction: column;
-        height: 700px;
+        height: 100%;
     }
 
     #contactanos-intro, #formulario-contacto{
         width: 100%;
     }
 
+    #contactanos-intro{
+        height: 300px;
+    }
 
-
-    
+    #columnas-form{
+        flex-direction: column;
+    }
 }
 
 
